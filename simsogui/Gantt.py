@@ -60,11 +60,7 @@ class GanttConfigure(QDialog):
         res = []
         for row in range(0, self._list_elements.count()):
             if self._list_elements.item(row).checkState() == Qt.Checked:
-                try:
-                    data = self._list_elements.item(row).data(Qt.UserRole)
-                except AttributeError:
-                    data = self._list_elements.item(row).data(Qt.UserRole)
-
+                data = self._list_elements.item(row).data(Qt.UserRole)
                 res.append(data)
         return res
 

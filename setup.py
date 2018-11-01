@@ -6,8 +6,8 @@ setup(
     version=simsogui.__version__,
     description='Graphical User Interface for SimSo',
     author='Maxime Cheramy',
-    author_email='maxime.cheramy@laas.fr',
-    url='http://homepages.laas.fr/mcheramy/simso/',
+    author_email='maxime.cheramy@gmail.com',
+    url='http://projects.laas.fr/simso/',
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
@@ -19,7 +19,8 @@ setup(
     ],
     packages=find_packages(),
     install_requires=[
-        'simso>=0.9',
+        'simso>=0.8',
+        'PyQt5>=5.11.3'
     ],
     entry_points={
         'gui_scripts': ['simso = simsogui:run_gui']

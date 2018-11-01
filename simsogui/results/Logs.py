@@ -31,15 +31,9 @@ class Logs(QTableWidget):
                 self.item(row, 0).setBackground(QColor(180, 220, 255))
                 self.item(row, 1).setBackground(QColor(180, 220, 255))
                 self.item(row, 2).setBackground(QColor(180, 220, 255))
-                #self.item(row, 0).setBackgroundColor(QColor(180, 220, 255))
-                #self.item(row, 1).setBackgroundColor(QColor(180, 220, 255))
-                #self.item(row, 2).setBackgroundColor(QColor(180, 220, 255))
             else:
                 self.item(row, 0).setBackground(QColor(220, 255, 180))
                 self.item(row, 1).setBackground(QColor(220, 255, 180))
                 self.item(row, 2).setBackground(QColor(220, 255, 180))
-                #self.item(row, 0).setBackgroundColor(QColor(220, 255, 180))
-                #self.item(row, 1).setBackgroundColor(QColor(220, 255, 180))
-                #self.item(row, 2).setBackgroundColor(QColor(220, 255, 180))
             row += 1
         self.setRowCount(row)
